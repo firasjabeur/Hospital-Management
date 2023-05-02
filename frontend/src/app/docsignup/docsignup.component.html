@@ -1,0 +1,81 @@
+
+<nav style="margin:auto" class="navbar navbar-expand-lg bg-dark">
+        
+    <a style="color: white;" class="navbar-brand" href="#">HOSPITAL</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a style="color: white;"class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/home">Home</a>
+        </li>
+
+        
+        
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  
+  </nav>
+
+
+  <div class="container">
+  
+    <div class="row">
+    
+
+        <div class="col-md-6">
+            <div class="card">
+            
+                <div class="text-center">
+                    <h1>Login As Doctor</h1>
+                    <h6>Please enter your Username & Password</h6>
+
+                </div>
+                <form [formGroup]="form" (ngSubmit)="submitClient()">
+                  
+                    <div class="mb-3">
+                        <label class="form-label"><h4>nom</h4></label>
+                        <input type="text" class="form-control" formControlName="nom" placeholder="Nom" required>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label"><h4>prenom</h4></label>
+                        <input type="text" class="form-control" formControlName="prenom" placeholder="Prenom" required>
+                      </div>
+                      <div class="mb-3">
+                        <label  class="form-label"><h4>adresse</h4></label>
+                        <input type="email" class="form-control" formControlName="adresse" placeholder="Adresse" required>
+                      </div>
+                      <div class="mb-3">
+                        <label  class="form-label"><h4>telephone</h4></label>
+                        <input type="text" class="form-control" formControlName="tel" placeholder="Numero Telephone" required>
+                      </div>
+                      <div class="mb-3">
+                        <label  class="form-label"><h4>email</h4></label>
+                        <input type="text" class="form-control" formControlName="email" placeholder="E-mail" required>
+                      </div>
+                      <div class="mb-3">
+                        <label  class="form-label"><h4>password</h4></label>
+                        <input type="password" class="form-control" formControlName="password" placeholder="Mot de passe" required>
+                      </div>
+                      <div class="d-grid gap-2 d-md-block">
+                        
+                        <div class="mb-3 d-flex justify-content-between">
+                            <input [disabled]="!form.valid" class="btn btn-primary w-100" type="submit" value="S'inscrire">
+                        </div>
+                        
+                        <button style="margin: 5px;" class="btn btn-warning" type="button" routerLink="/home">Cancel</button>
+                      </div>
+                  
+                </form>
+             
+
+
+            </div>
+        </div>
+    </div>
+</div>
