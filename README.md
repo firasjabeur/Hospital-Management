@@ -23,6 +23,7 @@ Database: MySQL8, Work bench CE-8
 
 
 
+![aaa2](https://user-images.githubusercontent.com/99259261/235695163-66fa0aa1-c544-449f-9582-9e55296b3c08.png)
 
 
 
@@ -49,6 +50,7 @@ Database: MySQL8, Work bench CE-8
 9. Detect Disease:
 
 
+![a5](https://user-images.githubusercontent.com/99259261/235695326-54549b5c-c36a-4750-a7c9-b077df68ef29.png)
 
 
 
