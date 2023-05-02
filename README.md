@@ -52,6 +52,9 @@ Database: MySQL8, Work bench CE-8
 
 ![a5](https://user-images.githubusercontent.com/99259261/235695326-54549b5c-c36a-4750-a7c9-b077df68ef29.png)
 
+## Development server
+Run ng serve for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
+
 
 
 
